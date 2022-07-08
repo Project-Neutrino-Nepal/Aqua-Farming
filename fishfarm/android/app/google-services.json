@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "183155452119",
+    "project_id": "fishfarm-d5334",
+    "storage_bucket": "fishfarm-d5334.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:183155452119:android:a3a83cd94c0fc88984a892",
+        "android_client_info": {
+          "package_name": "com.example.fishfarm"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "183155452119-kfracm3e9g9eg1u4ti0k7tbf8e4k82h5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyApkmXdKOiIeC8ii1iQHkk1tx31v3a7sIM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "183155452119-kfracm3e9g9eg1u4ti0k7tbf8e4k82h5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
