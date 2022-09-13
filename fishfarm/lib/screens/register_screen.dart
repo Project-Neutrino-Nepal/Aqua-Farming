@@ -51,7 +51,7 @@ class _RegisterState extends State<Register> {
         child: ListView(
           children: [
             Padding(
-              padding: const EdgeInsets.all(15),
+              padding: const EdgeInsets.all(25),
               child: Column(
                 children: [
                   TextFormField(
@@ -77,11 +77,14 @@ class _RegisterState extends State<Register> {
                   const SizedBox(
                     height: 20,
                   ),
-                  ElevatedButton(
-                    onPressed: () {
-                      createAccount();
-                    },
-                    child: const Text("Create Account"),
+                  SizedBox(
+                    width: double.infinity,
+                    child: ElevatedButton(
+                      onPressed: () {
+                        createAccount();
+                      },
+                      child: const Text("Create Account"),
+                    ),
                   ),
                   const SizedBox(
                     height: 10,

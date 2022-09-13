@@ -12,8 +12,10 @@ class Login extends StatefulWidget {
 }
 
 class _LoginState extends State<Login> {
-  TextEditingController emailController = TextEditingController(text: "ymilan361@gmail.com");
-  TextEditingController passwordController = TextEditingController(text: "mko0nji9,l.");
+  TextEditingController emailController =
+      TextEditingController(text: "ymilan361@gmail.com");
+  TextEditingController passwordController =
+      TextEditingController(text: "mko0nji9,l.");
 
   void login() async {
     String email = emailController.text.trim();
@@ -38,6 +40,7 @@ class _LoginState extends State<Login> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        automaticallyImplyLeading: false,
         centerTitle: true,
         title: const Text("Login"),
       ),
@@ -45,7 +48,7 @@ class _LoginState extends State<Login> {
         child: ListView(
           children: [
             Padding(
-              padding: const EdgeInsets.all(15),
+              padding: const EdgeInsets.all(25),
               child: Column(
                 children: [
                   TextField(
@@ -57,26 +60,33 @@ class _LoginState extends State<Login> {
                     height: 10,
                   ),
                   TextField(
+                    obscureText: true,
                     controller: passwordController,
                     decoration: const InputDecoration(labelText: "Password"),
                   ),
                   const SizedBox(
                     height: 20,
                   ),
-                  ElevatedButton(
-                    onPressed: () {
-                      login();
-                    },
-                    child: const Text("Log In"),
+                  SizedBox(
+                    width: double.infinity,
+                    child: ElevatedButton(
+                      onPressed: () {
+                        login();
+                      },
+                      child: const Text("Log In"),
+                    ),
                   ),
                   const SizedBox(
                     height: 10,
                   ),
-                  ElevatedButton(
-                    onPressed: () {
-                      Navigator.pushNamed(context, '/register');
-                    },
-                    child: const Text("Create an Account"),
+                  SizedBox(
+                    width: double.infinity,
+                    child: ElevatedButton(
+                      onPressed: () {
+                        Navigator.pushNamed(context, '/register');
+                      },
+                      child: const Text("Create an Account"),
+                    ),
                   ),
                 ],
               ),

@@ -1,8 +1,5 @@
-import 'dart:convert';
-
 import 'package:file_picker/file_picker.dart';
 import 'package:flutter/material.dart';
-import 'package:http/http.dart';
 import 'package:motion_toast/motion_toast.dart';
 
 class FishRecommendor extends StatefulWidget {
@@ -33,12 +30,11 @@ class Fish_RecommendorState extends State<FishRecommendor> {
     }
   }
 
-
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        automaticallyImplyLeading: false,
         title: const Text('Fish Recommendor'),
       ),
       body: Center(
